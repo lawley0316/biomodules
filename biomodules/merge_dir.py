@@ -42,7 +42,7 @@ class MergeGzipDir(Module):
         self.outfile = outfile
 
     def main(self):
-        with self.outfile.open('wb') as ofp:
+        with gzip.open(self.outfile, 'wb') as ofp:
             for infile in self.indir.iterdir():
                 if (not infile.is_file()) or (infile.suffix != '.gz'):
                     continue

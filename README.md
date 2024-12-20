@@ -18,3 +18,13 @@
 1. `blastn`，使用blastn进行序列比对；
 2. `minimap2`，使用minimap2进行序列比对；
 3. `samtools`，使用samtools处理比对结果；
+
+## Oxford Nanopore（ont）
+
+注意，使用该功能需要安装额外的包：
+
+```shell
+pip install biomodules[ont]
+```
+
+1. `medaka`，使用medaka call突变；

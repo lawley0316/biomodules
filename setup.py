@@ -18,7 +18,7 @@ URL = 'https://github.com/lawley0316/biomodules'
 EMAIL = 'lawley0316@gmail.com'
 AUTHOR = 'Lawley'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '1.1.3'
+VERSION = '1.1.4'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -27,6 +27,7 @@ REQUIRED = [
 
 # What packages are optional?
 EXTRAS = {
+    'ont': ['medaka']
 }
 
 here = os.path.abspath(os.path.dirname(__file__))

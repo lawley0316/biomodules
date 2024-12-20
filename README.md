@@ -17,3 +17,4 @@
 
 1. `blastn`，使用blastn进行序列比对；
 2. `minimap2`，使用minimap2进行序列比对；
+3. `samtools`，使用samtools处理比对结果；

@@ -19,6 +19,11 @@
 2. `minimap2`，使用minimap2进行序列比对；
 3. `samtools`，使用samtools处理比对结果；
 
+## 变异检测（variant）
+
+1. `bgzip`，bgzip压缩；
+2. `bcftools`，bcftools相关功能；
+
 ## Oxford Nanopore（ont）
 
 注意，使用该功能需要安装额外的包：

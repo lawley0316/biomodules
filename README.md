@@ -18,6 +18,7 @@
 1. `blastn`，使用blastn进行序列比对；
 2. `minimap2`，使用minimap2进行序列比对；
 3. `samtools`，使用samtools处理比对结果；
+4. `low_depth`，提取samtools depth中低深度位点；
 
 ## 变异检测（variant）
 

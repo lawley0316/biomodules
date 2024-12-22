@@ -8,7 +8,7 @@ class BcftoolsIndex(Command):
     bcftools (https://github.com/samtools/bcftools) need to be installed.
 
     Args:
-        threads: Use multithreading with INT worker threads
+        threads: Use multithreading with INT worker threads.
         vcf: The VCF file.
     """
     threads = Option('--threads')
@@ -22,10 +22,14 @@ class BcftoolsConsensus(Command):
     bcftools (https://github.com/samtools/bcftools) need to be installed.
 
     Args:
-        fasta_ref: Reference sequence in fasta format
-        output: Write output to a file
+        fasta_ref: Reference sequence in fasta format.
+        mask: Replace regions according to the mask_with option.
+        mask_with: Replace with CHAR (skips overlapping variants); change to uppercase (uc) or lowercase (lc).
+        output: Write output to a file.
         vcf: The VCF file.
     """
     fasta_ref = Option('-f')
+    mask = Option('-m')
+    mask_with = Option('--mask-with')
     output = Option('-o')
     vcf = Argument()

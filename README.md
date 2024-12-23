@@ -1,8 +1,9 @@
 # biomodules: 生物信息模块
 
-## 通用模块
+## 基础模块（base）
 
 1. `MergeDir`，给定一个输入文件夹和一个输出文件，把该文件夹下的所有文件合并到该文件中；
+2. `CountLines`，给定一个文件计算其行数；
 
 ## 序列相关（seq）
 
@@ -15,15 +16,15 @@
 
 ## 序列比对（align）
 
-1. `blastn`，使用blastn进行序列比对；
-2. `minimap2`，使用minimap2进行序列比对；
-3. `samtools`，使用samtools处理比对结果；
-4. `low_depth`，提取samtools depth中低深度位点；
+1. `Blastn`，使用blastn进行序列比对；
+2. `Minimap2`，使用minimap2进行序列比对；
+3. `Samtools`，使用samtools处理比对结果；
+4. `LowDepth`，提取samtools depth中低深度位点；
 
 ## 变异检测（variant）
 
-1. `bgzip`，bgzip压缩；
-2. `bcftools`，bcftools相关功能；
+1. `Bgzip`，bgzip压缩；
+2. `Bcftools`，bcftools相关功能；
 
 ## Oxford Nanopore（ont）
 

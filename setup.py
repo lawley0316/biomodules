@@ -18,7 +18,7 @@ URL = 'https://github.com/lawley0316/biomodules'
 EMAIL = 'lawley0316@gmail.com'
 AUTHOR = 'Lawley'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '1.1.7'
+VERSION = '1.1.8'
 
 # What packages are required for this module to be executed?
 REQUIRED = [

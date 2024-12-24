@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from okmodule import Option, Argument, Command
+from okmodule import Flag, Option, Argument, Command
 
 
 class BcftoolsIndex(Command):
@@ -8,9 +8,11 @@ class BcftoolsIndex(Command):
     bcftools (https://github.com/samtools/bcftools) need to be installed.
 
     Args:
+        force: Overwrite index if it already exists.
         threads: Use multithreading with INT worker threads.
         vcf: The VCF file.
     """
+    force = Flag('-f')
     threads = Option('--threads')
     vcf = Argument()
 

@@ -23,7 +23,7 @@ class MergeDir(Module):
     def main(self):
         with self.outfile.open('wb') as ofp:
             for infile in self.indir.iterdir():
-                if not infile.is_file():
+                if infile.is_dir() or infile.name.startswith('.'):
                     continue
                 with open(infile, 'rb') as ifp:
                     copyfileobj(ifp, ofp)

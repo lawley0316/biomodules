@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from pathlib import Path
 from zipfile import ZipFile
+from os.path import basename
 from shutil import copyfileobj
 
 from okmodule import Module
@@ -23,7 +24,7 @@ class MergeZipFile(Module):
     def main(self):
         with ZipFile(self.infile, 'r') as zip_file, self.outfile.open('wb') as ofp:
             for info in zip_file.infolist():
-                if info.is_dir():
+                if info.is_dir() or basename(info.filename).startswith('.'):
                     continue
                 with zip_file.open(info, 'r') as ifp:
                     copyfileobj(ifp, ofp)

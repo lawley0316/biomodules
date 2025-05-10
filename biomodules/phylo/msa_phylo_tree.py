@@ -41,5 +41,5 @@ class MSAPhyloTree(Module):
             prefix=stem,
             quiet=True,
             threads=self.threads
-        )
+        )()
         return aligned_file, treefile

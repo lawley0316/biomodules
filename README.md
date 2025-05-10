@@ -9,7 +9,7 @@
 ## 序列相关（seq）
 
 1. `Fastq2Fasta`，fastq转fasta；
-2. `SubSeq`，从fasta文件中提取部分序列
+2. `SubSeq`，从fasta文件中提取部分序列；
 
 ## 预处理模块（preprocessing）
 
@@ -22,6 +22,7 @@
 2. `Minimap2`，使用minimap2进行序列比对；
 3. `Samtools`，使用samtools处理比对结果；
 4. `LowDepth`，提取samtools depth中低深度位点；
+5. `Muscle`，muscle多序列比对；
 
 ## 变异检测（variant）
 

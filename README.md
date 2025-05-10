@@ -42,3 +42,4 @@ pip install biomodules[ont]
 ## 系统发育
 
 1. `IQTree`，使用iqtree构建进化树
+2. `MSAPhyloTree`，使用多序列比对构建进化树

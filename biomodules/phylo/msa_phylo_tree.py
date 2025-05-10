@@ -30,6 +30,7 @@ class MSAPhyloTree(Module):
         stem = self.seqs_file.stem
         suffix = self.seqs_file.suffix
         aligned_file = basedir / f'{stem}.aligned{suffix}'
+        prefix = str(basedir / stem)
         treefile = basedir / f'{stem}.treefile'
         Muscle(
             align=self.seqs_file,
@@ -38,7 +39,7 @@ class MSAPhyloTree(Module):
         )()
         IQTree(
             alignment_file=aligned_file,
-            prefix=stem,
+            prefix=prefix,
             quiet=True,
             threads=self.threads
         )()
